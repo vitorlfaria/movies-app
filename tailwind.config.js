@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./app/**/*.{js,ts,jsx,tsx}"],
+	content: [
+		"./app/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+	],
 	presets: [require("nativewind/preset")],
 	theme: {
 		extend: {
@@ -14,7 +17,7 @@ module.exports = {
 				},
 				dark: {
 					100: "#221F3D",
-					200: "0F0D23",
+					200: "#0F0D23",
 				},
 				accent: "AB8BFF",
 			},
